@@ -53,7 +53,7 @@ Este sistema foi desenvolvido para facilitar o controle de devoluções de uma l
 ## Estrutura do Projeto
 
 ```
-projeto/
+devolucao-veiculos/
 ├── index.html       # Página principal com formulário
 ├── script.js        # Lógica da aplicação (classes e funções)
 ├── styles.css       # Estilização
@@ -105,7 +105,7 @@ A interface possui:
 
 ```bash
 git clone <seu-repositorio>
-cd projeto
+cd devolucao-veiculos
 ```
 
 2. **Abra no navegador**
