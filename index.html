@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/3.0.3/jspdf.umd.min.js"
+        integrity="sha512-+EeCylkt9WHJk5tGJxYdecHOcXFRME7qnbsfeMsdQL6NUPYm2+uGFmyleEqsmVoap/f3dN/sc3BX9t9kHXkHHg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="icon"
+        href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48cmVjdCBmaWxsPSIjNGE5MGUyIiB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIvPjwvc3ZnPg==">
+
+    <title>SISTEMA DE DEVOLUÇÃO | VEÍCULOS</title>
+</head>
+
+<body>
+    <div class="card">
+
+        <div class="cliente">
+            <h1>INFORMAÇÔES DO CLIENTE</h1>
+
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" placeholder="Nome do cliente">
+
+            <label for="cpf">CPF:</label>
+            <input type="text" id="cpf" name="cpf" placeholder="CPF do cliente">
+        </div>
+
+        <h1>CONTROLE DE DEVOLUÇÔES</h1>
+        <form id="formulario">
+            <select name="categoria" id="categoria">
+                <option value="selecione">Selecione a categoria</option>
+                <option value="Carro">🚗💨 Carro</option>
+                <option value="Caminhão">🚛💨 Caminhão</option>
+            </select>
+
+            <label for="modelo">Modelo:</label>
+            <input type="text" id="modelo" name="modelo" placeholder="Modelo do veículo">
+
+            <label for="ano">Ano:</label>
+            <input type="text" id="ano" name="ano" placeholder="Ano do veículo">
+
+            <label for="placa">Placa:</label>
+            <input type="text" id="placa" name="placa" placeholder="Placa do veículo">
+
+            <label for="km">Km rodado:</label>
+            <input type="text" id="km" name="km" placeholder="Km rodados no período">
+
+            <label for="diaria">Diárias:</label>
+            <input type="text" id="diaria" name="diaria" placeholder="Quantidade de diárias">
+
+            <button id="finalizar" type="button" onclick="getDados()">✅ Finalizar Devolução</button>
+            <button id="relatorio" type="button" onclick="gerarRelatorio()">📊 Relatório</button>
+        </form>
+
+
+
+        <div id="resultado"></div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
